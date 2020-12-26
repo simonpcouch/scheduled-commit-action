@@ -1,0 +1,7 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.github/depends.Rds
+.github/R-version
+*.DS_Store
