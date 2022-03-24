@@ -43,11 +43,15 @@ jobs:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
-
-      - name: Install dependencies
+      
+      - name: Install dependencies1
+        uses: actions/checkout@v1
+        run: |
+          sudo apt-get install libcurl4-openssl-dev
+          
+      - name: Install dependencies2
         run: |
           remotes::install_deps(dependencies = TRUE)
-          sudo apt-get install libcurl4-openssl-dev
         shell: Rscript {0}
           
       - name: Generate data
