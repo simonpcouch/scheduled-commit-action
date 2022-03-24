@@ -47,6 +47,7 @@ jobs:
       - name: Install dependencies
         run: |
           remotes::install_deps(dependencies = TRUE)
+          sudo apt-get install libcurl4-openssl-dev
         shell: Rscript {0}
           
       - name: Generate data
