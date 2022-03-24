@@ -358,16 +358,4 @@ library(dplyr)
     "Wind(dir,mph)"=c(todaymorningwind,todayafternoonwind,todayeveningwind,todayovernightwind,tomorrowmorningwind,tomorrowafternoonwind))
   
 output = c(aqi,aqi_forecast,adi,temp5,depth5,time5,scale5,inversion5,title)
-
-
-
-
-
-
-
-  
-  
-  
-
-
 save(output, file = paste0("data-raw/data_", make.names(Sys.time()), ".Rda"))
