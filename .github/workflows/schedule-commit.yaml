@@ -31,6 +31,14 @@ jobs:
 
       - name: Query dependencies
         run: |
+          install.packages("shiny")
+          install.packages("shinydashboard")
+          install.packages("tidyverse")
+          install.packages("rvest")
+          install.packages("robotstxt")
+          install.packages("lubridate")
+          install.packages("stringr")
+          install.packages("jsonlite")
           install.packages('remotes')
           install.packages('sessioninfo')
           saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
