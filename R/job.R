@@ -9,7 +9,6 @@ library(rvest)
 library(dplyr)
 
 
-scrape = function(){
   # 1, webscraping processes
   # webscraping with rvest package, some regular expressions are used.
   #
@@ -362,16 +361,13 @@ output = c(aqi,aqi_forecast,adi,temp5,depth5,time5,scale5,inversion5,title)
 
 
 
-return(output)
 
 
 
 
-
-}
   
   
   
 
 
-save(scrape(), file = paste0("data-raw/data_", make.names(Sys.time()), ".Rda"))
+save(output, file = paste0("data-raw/data_", make.names(Sys.time()), ".Rda"))
