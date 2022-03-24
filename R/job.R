@@ -1,3 +1,12 @@
+install.packages("shiny")
+install.packages("shinydashboard")
+install.packages("tidyverse")
+install.packages("rvest")
+install.packages("robotstxt")
+install.packages("lubridate")
+install.packages("stringr")
+install.packages("jsonlite")
+
 library(shiny)
 library(shinydashboard)
 library(tidyverse)
