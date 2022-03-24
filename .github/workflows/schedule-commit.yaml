@@ -56,8 +56,8 @@ jobs:
         
       - name: Commit files
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+          git config --local user.email "yw6@andrew.cmu.edu"
+          git config --local user.name "Yuchengyw6"
           git add --all
           git commit -am "add data"
           git push 
