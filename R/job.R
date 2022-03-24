@@ -1,6 +1,8 @@
+install.packages("curl")
 install.packages("httr")
 install.packages("rvest")
 install.packages("dplyr")
+library(curl)
 library(rvest)
 library(dplyr)
 
