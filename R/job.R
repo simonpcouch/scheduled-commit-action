@@ -372,6 +372,6 @@ return(output)
   
   
   
-x=scrape()
 
-save(x, file = paste0("data-raw/data_", make.names(Sys.time()), ".Rda"))
+
+save(scrape(), file = paste0("data-raw/data_", make.names(Sys.time()), ".Rda"))
