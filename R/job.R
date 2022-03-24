@@ -11,7 +11,6 @@ library(dplyr)
 
   # 1, webscraping processes
   # webscraping with rvest package, some regular expressions are used.
-  #
   # website 1
   # For website 1, AQI information(today, tomorrow) for Pittsburgh area and Liberty-Clairton area are scarped.
   # The content of the website would be updated at ___ everyday, and does not change until next update.
