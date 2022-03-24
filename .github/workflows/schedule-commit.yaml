@@ -1,7 +1,6 @@
 on:
   schedule:
-    - cron: "57 * * * *"
-  workflow_dispatch:
+    - cron: "12 * * * *"
 jobs:
   generate-data:
     runs-on: ${{ matrix.config.os }}
