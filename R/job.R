@@ -1,3 +1,4 @@
+install.packages("httr")
 install.packages("rvest")
 install.packages("dplyr")
 library(rvest)
